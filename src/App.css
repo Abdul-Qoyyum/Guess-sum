@@ -1,33 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Container {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  grid-gap: 10px;
+  border: solid #000 10px;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  height:100vh;
+}
+
+.options{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: minmax(200px);
+grid-gap: 10px;
+width: 100%;
+border: rgba(0, 0, 0, 0.50) ridge 1px;
+padding: 10px;
+}
+
+.options > div{
+  border: 1px ridge #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.Container span{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Container > p{
+ font-family: cursive;
+}
+
+.submitButton{
+padding: 5px;
+background: rgba(0, 0, 0, 0.50);
+border-radius: 10px;
+color: white;
+width: 200px;
+font-size: 25px;
+margin-top: 15px;
+line-height: 30px;
+letter-spacing: 3px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.playAgain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.after{
+  background: rgba(210, 82, 127, 75%);
+  width: 390px;
+  height:103px;
+  top:270px;
+  left: calc(50% - 195px);
+  position: absolute;
+  visibility: hidden;
+  padding: 39px;
+}
+
+.after p {
+  margin-left: 75px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.correct{
+  background: rgba(0,0,0,60%);
+  visibility: visible;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrong{
+  background: rgba(120,120,50, 60%);
+  visibility: visible;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 

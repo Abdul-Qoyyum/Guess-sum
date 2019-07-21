@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background: rgba(192, 192, 12, 76%);
+}
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
 code {
